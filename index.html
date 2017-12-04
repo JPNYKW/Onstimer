@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Onstimer</title>
+	
+	<style>
+		body{
+			background: #202028;
+			text-align: center;
+			font-family: Arial Black, Gadget," sans-serif";
+			color: #eee;
+		}
+		button{
+			background: #131313;
+			border: solid 1px #232323;
+			font-size: 18px;
+			color: #dedede;
+			font-family: Arial Black, Gadget," sans-serif";
+		}
+		button:hover{
+			background: #353535;
+			color: #ededed;
+		}
+		input{
+			background: rgba(0,0,0,0);
+			border: dashed 1px #eee;
+			text-align: center;
+			font-size: 20px;
+			color: #eee;
+			width: 128px;
+		}
+		.logo{
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="timer"></canvas><br>
+	<span class="logo">- Settings -</span>
+	<br>
+	<br>
+	<input value=1 id="min">
+	<br>
+	Min
+	<br>
+	<input value=0 id="sec">
+	<br>
+	Sec
+	<br>
+	<br>
+	<button onClick="if(this.innerText=='Done'){start();this.innerText='Stop'}else{clearInterval(loop);run=false;this.innerText='Done'}">Done</button>
+	
+	<script src="timer.js"></script>
+</body>
+</html>
