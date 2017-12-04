@@ -73,7 +73,7 @@ function draw(){
 	cont.fillStyle='rgba(220,220,220,0.7)';
 	cont.font='50px Arial';
 	
-	cont.fillText(round(timer.min)+':'+round(timer.sec),canv.width/2,canv.height/2+20);
+	cont.fillText(('00'+round(timer.min)).slice(-2)+':'+('00'+round(timer.sec)).slice(-2),canv.width/2,canv.height/2+20);
 }
 
 function dotsOnCircle(cx,cy,dir,radius,vertex){
