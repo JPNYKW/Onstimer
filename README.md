@@ -1,6 +1,8 @@
 # Onstimer
 Stylish timer for your works.
 
+https://jpnykw.github.io/Onstimer/
+
 # Screen shot
 
 ### Main timer
